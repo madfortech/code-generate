@@ -1,0 +1,42 @@
+{
+    "name": "madfortech/code-generate",
+    "description": "Easily generate CRUD (Create, Read, Update, Delete) code for your database tables with our online tool.",
+    "keywords": [
+        "madfortech",
+        "code-generate"
+    ],
+    "homepage": "https://github.com/madfortech/code-generate",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Himanshu Nishad",
+            "email": "understandlog@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Madfortech\\CodeGenerate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Madfortech\\CodeGenerate\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
